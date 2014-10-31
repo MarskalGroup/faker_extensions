@@ -9,15 +9,15 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Mike Urban"]
   spec.email         = ["mike@marskalgroup.com"]
   spec.summary       = %q{This gem adds a few extra handy methods to the Faker gem}
-  # spec.description   = %q{}
-  spec.homepage      = ""
+  spec.description   = %q{It comes in very handy for generating realistic dummy or seed data in large quantities for testing.}
+  spec.homepage      = 'https://github.com/MarskalGroup/faker_extensions'
   spec.license       = "MIT"
 
-  spec.add_development_dependency 'Faker'
+  spec.add_development_dependency 'Faker', '~> 1.4'
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.6"
-  spec.add_development_dependency "rake"
+  spec.add_development_dependency "rake", "~> 0"
 end
