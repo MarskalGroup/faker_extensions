@@ -8,20 +8,6 @@ Installing
 ----------
 ```bash
 gem install faker_extensions
-
-
-##Usage
-=====
-```bash
-
-Handy extensions to enhance the capabilities of the Faker Gem
-
-It comes in very handy for generating dummy or seed data in large quantities for testing
-
-Installing
-----------
-```bash
-gem install faker_extensions
 ```
 
 ##Usage
@@ -55,8 +41,9 @@ Faker::gender(p_male = 'male', p_female = 'female')
 
   Faker:gender                   #randomly select between male and female
   Faker:gender('boy', 'girl')    #randomly select between boy and girl
-  Faker:gender('boy', 'girl')    #randomly select between boy and girl
+  Faker:gender('grandma', 'grandpa')    #randomly select between grandma and grandpa
   Faker:gender(I18n.t('gender.male'), I18n.t('gender.female'))  #internationalization way to select gender
+   #Note Internationalization must be handled by calling method, fake does nothing more in this case than choose between two values
 
 # => returns a randomly selected  integer between p_from and p_to
 Faker::integer_range(p_from, p_to)
